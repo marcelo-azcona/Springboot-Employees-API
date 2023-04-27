@@ -4,9 +4,11 @@ import com.mazcona.springboot.employeescrud.entity.Employee;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class EmployeeDAOImpl implements EmployeeDAO {
 
     private final EntityManager entityManager;
